@@ -83,7 +83,7 @@ const Index = () => {
 
   return (
     <div className="container mx-auto px-4 py-6">
-      <h1 className="text-3xl font-bold mb-1 text-blue-600">Form Insight Dashboard</h1>
+      <h1 className="text-3xl font-bold mb-1 text-blue-600">Google Form Response Visualizer</h1>
       <p className="text-muted-foreground mb-6">
         Visualize Google Form responses from published Google Sheets
       </p>
