@@ -84,7 +84,7 @@ const ChartSection = ({ data }: ChartSectionProps) => {
   }
 
   return (
-    <ScrollArea className="h-[calc(100vh-320px)] md:h-[calc(100vh-280px)] w-full">
+    <ScrollArea className="h-[calc(100vh-250px)] md:h-[calc(100vh-220px)] w-full">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-10">
         {chartData.map((chart) => (
           <Card key={chart.questionIndex} className="shadow-sm">
@@ -107,7 +107,7 @@ const ChartSection = ({ data }: ChartSectionProps) => {
                 </div>
 
                 <TabsContent value="bar" className="mt-0">
-                  <div className="h-64">
+                  <div className="h-80">
                     <ResponsiveContainer width="100%" height="100%">
                       <BarChart
                         data={chart.answers}
@@ -138,14 +138,14 @@ const ChartSection = ({ data }: ChartSectionProps) => {
                 </TabsContent>
 
                 <TabsContent value="pie" className="mt-0">
-                  <div className="h-64">
+                  <div className="h-80">
                     <ResponsiveContainer width="100%" height="100%">
                       <PieChart>
                         <Pie
                           data={chart.answers}
                           cx="50%"
                           cy="50%"
-                          outerRadius={80}
+                          outerRadius={100}
                           dataKey="value"
                           label={({ name, percentage }) => `${name}: ${percentage}%`}
                         >

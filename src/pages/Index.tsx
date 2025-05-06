@@ -82,17 +82,14 @@ const Index = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-6">
       <h1 className="text-3xl font-bold mb-1 text-blue-600">Form Insight Dashboard</h1>
-      <p className="text-muted-foreground mb-8">
+      <p className="text-muted-foreground mb-6">
         Visualize Google Form responses from published Google Sheets
       </p>
       
-      <Card className="mb-6 p-6 shadow-sm border">
+      <Card className="mb-5 p-6 shadow-sm border">
         <CsvInput onLoadCsv={loadCsv} isLoading={isLoading} />
-        <p className="text-xs text-muted-foreground mt-3">
-          <strong>How to get a CSV URL:</strong> In Google Sheets, go to File → Share → Publish to web → Select CSV → Publish → Copy link
-        </p>
       </Card>
       
       <div className="mb-6">

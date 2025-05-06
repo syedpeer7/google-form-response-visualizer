@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -47,7 +48,7 @@ const DataTable = ({ data, isLoading }: DataTableProps) => {
           className="max-w-md"
         />
       )}
-      <ScrollArea className="h-[calc(100vh-320px)] md:h-[calc(100vh-280px)]">
+      <ScrollArea className="h-[calc(100vh-250px)] md:h-[calc(100vh-220px)]">
         <div className="relative overflow-x-auto">
           <table className="w-full border-collapse">
             <thead className="bg-muted sticky top-0 z-10">
