@@ -49,8 +49,8 @@ const DataTable = ({ data, isLoading }: DataTableProps) => {
         />
       )}
       <ScrollArea className="h-[calc(100vh-250px)] md:h-[calc(100vh-220px)]">
-        <div className="relative overflow-x-auto">
-          <table className="w-full border-collapse">
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse min-w-full">
             <thead className="bg-muted sticky top-0 z-10">
               <tr>
                 {filteredData[0]?.map((header, i) => (
